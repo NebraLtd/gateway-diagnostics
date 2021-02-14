@@ -67,13 +67,13 @@ setup(
     packages=find_packages(),
     # Alternatively, if you want to distribute just a my_module.py, uncomment
     # this:
-      # py_modules=["RTk"],
+       py_modules=["nebraHotspotDiag/genHTML"],
 
     # List run-time dependencies here.  These will be installed by pip when
     # your project is installed. For an analysis of "install_requires" vs pip's
     # requirements files see:
     # https://packaging.python.org/en/latest/requirements.html
-    install_requires=['setuptools','wheel','pyserial>=3','future'],
+    install_requires=['setuptools','wheel'],
 
     # List additional groups of dependencies here (e.g. development
     # dependencies). You can install these using the following syntax,
@@ -100,9 +100,9 @@ setup(
     # To provide executable scripts, use entry points in preference to the
     # "scripts" keyword. Entry points provide cross-platform support and allow
     # pip to create the appropriate form of executable for the target platform.
-    #entry_points={
-    #    'console_scripts': [
-    #        'sample=sample:main',
-    #    ],
-    #},
+    entry_points={
+        'console_scripts': [
+            'nebraHotspotDiag=nebraHotspotDiag.nebraHotspotDiag:main',
+        ],
+    },
 )
