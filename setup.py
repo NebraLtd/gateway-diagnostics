@@ -20,7 +20,7 @@ setup(
     # Versions should comply with PEP440.  For a discussion on single-sourcing
     # the version across setup.py and the project code, see
     # https://packaging.python.org/en/latest/single_source_version.html
-    version='0.0.1',
+    version='0.0.2',
 
     description='Diagnostics for Nebra Hotspots',
     long_description=long_description,
@@ -41,7 +41,7 @@ setup(
         #   3 - Alpha
         #   4 - Beta
         #   5 - Production/Stable
-        'Development Status :: 3 - Beta',
+        'Development Status :: 3 - Alpha',
 
         # Indicate who your project is intended for
         "Topic :: System :: Hardware",
@@ -67,7 +67,7 @@ setup(
     packages=find_packages(),
     # Alternatively, if you want to distribute just a my_module.py, uncomment
     # this:
-       py_modules=["nebraHotspotDiag/genHTML"],
+    scripts = ['nebraHotspotDiag/genHTML.py'],
 
     # List run-time dependencies here.  These will be installed by pip when
     # your project is installed. For an analysis of "install_requires" vs pip's
