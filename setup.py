@@ -15,22 +15,22 @@ with open(path.join(here, 'README.md'), encoding='utf-8') as f:
     long_description = f.read()
 
 setup(
-    name='RTk',
+    name='nebraHotspotDiag',
 
     # Versions should comply with PEP440.  For a discussion on single-sourcing
     # the version across setup.py and the project code, see
     # https://packaging.python.org/en/latest/single_source_version.html
-    version='0.3.6',
+    version='0.0.1',
 
-    description='RTk.GPIO Python Library',
+    description='Diagnostics for Nebra Hotspots',
     long_description=long_description,
 
     # The project's main homepage.
-    url='https://bitbucket.org/ryanteckltd/rtk-gpio-python-side/',
+    url='https://github.com/NebraLtd/gateway-diagnostics',
 
     # Author details
-    author='Ryanteck LTD.',
-    author_email='Ryan@ryanteck.uk',
+    author='Nebra LTD.',
+    author_email='Ryan@pi-supply.com',
 
     # Choose your license
     license='MIT',
@@ -41,14 +41,10 @@ setup(
         #   3 - Alpha
         #   4 - Beta
         #   5 - Production/Stable
-        'Development Status :: 4 - Beta',
+        'Development Status :: 3 - Beta',
 
         # Indicate who your project is intended for
-        'Intended Audience :: Developers',
-        'Intended Audience :: Education',
-        "Topic :: Education",
         "Topic :: System :: Hardware",
-        'Topic :: Software Development',
 
         # Pick your license as you wish (should match "license" above)
         'License :: OSI Approved :: MIT License',
@@ -56,16 +52,14 @@ setup(
         # Specify the Python versions you support here. In particular, ensure
         # that you indicate whether you support Python 2, Python 3 or both.
 
-        'Programming Language :: Python :: 2.7',
         'Programming Language :: Python :: 3',
-        'Programming Language :: Python :: 3.3',
-        'Programming Language :: Python :: 3.4',
-        'Programming Language :: Python :: 3.5',
         'Programming Language :: Python :: 3.6',
+        'Programming Language :: Python :: 3.7',
+        'Programming Language :: Python :: 3.8',
     ],
 
     # What does your project relate to?
-    keywords='Raspberry Pi GPIO RTk GPIO',
+    keywords='Nebra Helium Hotspot',
 
     # You can just specify the packages manually here if your project is
     # simple. Or you can use find_packages().
